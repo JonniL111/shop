@@ -1,0 +1,31 @@
+@import'./app/assets/vars.scss';
+
+.container{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+body{
+  color: #3c3c3b;
+  font-family: $segoe;
+}
+h1, h2,h3,h4,h5,h6{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+input, button, select{
+  &:focus,
+  &:active{
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+  }   
+}

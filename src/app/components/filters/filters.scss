@@ -1,0 +1,112 @@
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.filter-item-wrapper {
+  flex: 1 1 176px;
+  margin-bottom: 20px;
+  input:focus {
+    border: 1px solid #00c1ff;
+  }
+  & + & {
+    margin-left: 20px;
+  }
+  @media (max-width: 600px) {
+    flex: 1 1 100%;
+    margin-left: 0 !important;
+  }
+}
+.filter-search-wrapper {
+  display: flex;
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+    margin-left: 0 !important;
+  }
+}
+.filter__select {
+  width: 100%;
+}
+.filter-item-select {
+  position: relative;
+}
+.filter-item-select::before {
+  content: '\203A';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  z-index: -1;
+  transform: rotate(90deg);
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-align: center;
+}
+.filter-field {
+  border-radius: 5px;
+  border: 1px solid #00c1ff;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  appearance: none;
+  background: transparent;
+}
+.filter__search {
+  width: 100%;
+  margin-right: 10px;
+}
+.filter__button {
+  width: 32px;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../../images/icon-search-25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.fiter__radio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fiter__radio input[type='radio'] {
+  display: none;
+}
+
+.fiter__radio {
+  overflow: hidden;
+}
+.form_toggle-item {
+  display: inline-block;
+}
+.form_toggle-item input[type='radio'] {
+  display: none;
+}
+.form_toggle-item span {
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #00c1ff;
+  border-right: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fiter__radio .item-1 span {
+  border-radius: 6px 0 0 6px;
+}
+.fiter__radio .item-2 span {
+  border-radius: 0 6px 6px 0;
+  border-right: 1px solid #00c1ff;
+}
+
+/* Checked */
+.fiter__radio .item-1 input[type='radio']:checked + span,
+.fiter__radio .item-2 input[type='radio']:checked + span {
+  background: #00c1ff;
+  color: #fff;
+}

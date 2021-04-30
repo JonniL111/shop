@@ -1,0 +1,44 @@
+@import '../../assets/vars.scss';
+
+.header {
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 73px;
+  align-items: center;
+  position: relative;
+
+}
+.header-logo {
+  flex: 0 1 285px;  
+  @media (max-width: 928px) {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  @media (max-width: 440px) {
+    flex: 0 1 220px; 
+  }
+}
+
+.header-menu {
+  flex: 0 1 160px;
+  margin-left: 12px;
+  @media (max-width: 928px) {
+    margin-left: 0;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+}
+
+.second-menu {
+  flex: 0 1 440px;
+  margin-left: auto;
+  @media (max-width: 928px) {
+    flex: auto;
+    width: 100%;
+    padding: 17px 0 19px;
+  }
+}

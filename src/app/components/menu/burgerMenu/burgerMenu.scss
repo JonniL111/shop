@@ -1,0 +1,80 @@
+@import '../../../assets/vars.scss';
+
+.burgermenu {
+  position: relative;
+  .burgermenu__button {
+    height: 24px;
+    width: 35px;
+    position: relative;
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .burgermenu__button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent;
+  }
+  .burgermenu__button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent;
+  }
+  &__button-lines {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    height: 4px;
+    width: 100%;
+    background-color: $accent;
+    left: 0;
+  }
+}
+.burgermenu-list {
+  position: absolute;
+  top: 13px;
+  left: 45px;
+  border-top: 2px solid #00c1ff;
+  white-space: nowrap;
+  margin: 0;
+  width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  background-color: #fff;
+  z-index: 10;
+  &--open {
+    animation: menu-list__show 0.5s ease;
+    animation-fill-mode: both;
+    opacity: 1;
+    width: 130px;
+    height: 200px;
+  }
+  &__item {
+    display: block;
+    margin: 3px 0;
+  }
+  &__link {
+    line-height: 36px;
+    color: #575756;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: $segoeLight;
+    font-size: 17px;
+    cursor: pointer;
+    line-height: 36px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

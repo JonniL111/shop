@@ -1,0 +1,61 @@
+@import'../../../assets/vars.scss';
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid $accent;
+  max-width: 180px;
+}
+.card-thumbnail {
+  height: 134px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+.card-content {
+  padding: 15px;
+  p,
+  a {
+    padding-left: 0.5em;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0.4em auto;
+    line-height: 22px;
+  }
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__description {
+    font-size: 11px!important;
+    margin-top: 0.8em;
+  }
+  &__more {
+    display: block;
+    color: $accent;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__buy {
+    margin-top: 0.8em;
+    display: block;
+    border-radius: 5px;
+    border: 0;
+    background-color: $accent;
+    padding: 0.4em 0.1em;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    &:hover {
+      background-color: #0078e7;
+    }
+  }
+}
+

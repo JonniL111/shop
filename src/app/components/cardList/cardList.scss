@@ -1,0 +1,30 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 15px;
+  row-gap: 55px;
+  padding-top: 50px;
+  justify-content: left;
+  position: relative;
+  @media (min-width: 681px) and(max-width: 928px) {
+    grid-template-columns: repeat(4, auto);
+  }
+  @media (min-width: 561px) and(max-width: 680px) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @media (min-width: 401px) and(max-width: 560px) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+.empty{
+  text-align: center;
+  font-size: 18px;
+  padding: 30px;
+  width: 220px;
+  position: absolute;
+  left: 50%;
+  margin-left: -110px;
+}

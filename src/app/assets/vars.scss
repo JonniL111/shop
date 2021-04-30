@@ -1,0 +1,19 @@
+$accent: #00c1ff;
+$blue: #00aee6;
+$gradient-active: linear-gradient(0deg, rgba(0,203,255,1) 0%, rgba(0,86,249,1) 100%);
+@font-face {
+	font-family: 'Segoe'; 
+	src: url(./fonts/SegoeUIRegular.ttf); 
+}
+@font-face {
+	font-family: 'SegoeLight'; 
+	src: url(./fonts/SegoeUILight.ttf); 
+}
+@font-face {
+	font-family: 'SegoeSemi'; 
+	src: url(./fonts/SegoeUISemiBold.ttf); 
+}
+
+$segoe: 'Segoe', sans-serif;
+$segoeLight: 'SegoeLight', sans-serif;
+$segoeSemi: 'SegoeSemi', sans-serif;

@@ -1,0 +1,22 @@
+@import '../../assets/vars.scss';
+
+.main{
+  margin-bottom: 75px;
+}
+.page-title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 36px;
+  font-family: $segoeLight;
+}
+.filter {
+  width: 100%;
+}
+.search-rezult__title {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #3c3c3b;
+  padding: 20px 0;
+}
