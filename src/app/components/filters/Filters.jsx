@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Form, Field } from 'react-final-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { addActiveFiter, deleteActiveFilter, setActiveFilters } from '../../redux/action';
-import { cleanLocalStore } from '../../utils/localStore';
-import { arrToObj, objToArr } from '../../utils/utils';
+import { addActiveFiter, deleteActiveFilter, setActiveFilters } from '../../../redux/action';
+import { cleanLocalStore } from '../../../utils/localStore';
+import { arrToObj, objToArr } from '../../../utils/utils';
 import './filters.scss';
 
 function Filters({ filters }) {

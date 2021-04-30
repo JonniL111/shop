@@ -5,9 +5,9 @@ import { CardList } from '../../components/cardList';
 import { Filters } from '../../components/filters';
 import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
-import { fetchGoods, clearActiveFilter, setActiveFilters, getSortGoods } from '../../redux/action';
-import { filter } from '../../utils/filter';
-import { cleanLocalStore } from '../../utils/localStore';
+import { fetchGoods, clearActiveFilter, setActiveFilters, getSortGoods } from '../../../redux/action';
+import { filter } from '../../../utils/filter';
+import { cleanLocalStore } from '../../../utils/localStore';
 import './main.scss';
 
 function Main() {
